@@ -10,7 +10,6 @@ import {
   IconFileDescription,
   IconFileWord,
   IconFolder,
-  IconHelp,
   IconInnerShadowTop,
   IconListDetails,
   IconReport,
@@ -18,6 +17,7 @@ import {
   IconSettings,
   IconUsers
 } from "@tabler/icons-react";
+import { GithubIcon, MessageCircle } from "lucide-react";
 
 import { NavDocuments } from "@/components/nav-documents";
 import { NavMain } from "@/components/nav-main";
@@ -35,9 +35,9 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
+    name: "Jack",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg"
+    avatar: "https://bundui-images.netlify.app/avatars/08.png"
   },
   navMain: [
     {
@@ -46,12 +46,12 @@ const data = {
       icon: IconDashboard
     },
     {
-      title: "Lifecycle",
+      title: "Chats",
       url: "#",
-      icon: IconListDetails
+      icon: MessageCircle
     },
     {
-      title: "Analytics",
+      title: "Inbox",
       url: "#",
       icon: IconChartBar
     },
@@ -121,31 +121,41 @@ const data = {
       icon: IconSettings
     },
     {
-      title: "Get Help",
-      url: "#",
-      icon: IconHelp
-    },
-    {
       title: "Search",
       url: "#",
       icon: IconSearch
+    },
+    {
+      title: "Github",
+      url: "https://github.com/shadcn-examples/admin-dashboard-template",
+      icon: GithubIcon
     }
   ],
   documents: [
     {
-      name: "Data Library",
+      name: "Base",
       url: "#",
       icon: IconDatabase
     },
     {
-      name: "Reports",
+      name: "Navigation",
       url: "#",
       icon: IconReport
     },
     {
-      name: "Word Assistant",
+      name: "Data Entry",
       url: "#",
       icon: IconFileWord
+    },
+    {
+      name: "Data Display",
+      url: "#",
+      icon: IconDatabase
+    },
+    {
+      name: "Others",
+      url: "#",
+      icon: IconDatabase
     }
   ]
 };
@@ -159,7 +169,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5">
               <a href="#">
                 <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Acme Inc.</span>
+                <span className="text-base font-semibold">Admin</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
