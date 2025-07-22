@@ -11,13 +11,13 @@ import {
   IconFileWord,
   IconFolder,
   IconInnerShadowTop,
-  IconListDetails,
   IconReport,
   IconSearch,
   IconSettings,
-  IconUsers
+  IconUsers,
+  IconBrandGithubFilled,
+  IconMessageChatbot
 } from "@tabler/icons-react";
-import { GithubIcon, MessageCircle } from "lucide-react";
 
 import { NavDocuments } from "@/components/nav-documents";
 import { NavMain } from "@/components/nav-main";
@@ -48,7 +48,7 @@ const data = {
     {
       title: "Chats",
       url: "#",
-      icon: MessageCircle
+      icon: IconMessageChatbot
     },
     {
       title: "Inbox",
@@ -128,7 +128,7 @@ const data = {
     {
       title: "Github",
       url: "https://github.com/shadcn-examples/admin-dashboard-template",
-      icon: GithubIcon
+      icon: IconBrandGithubFilled
     }
   ],
   documents: [
