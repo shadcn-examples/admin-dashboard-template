@@ -2,21 +2,19 @@
 
 import * as React from "react";
 import {
-  IconCamera,
-  IconChartBar,
   IconDashboard,
   IconDatabase,
-  IconFileAi,
-  IconFileDescription,
   IconFileWord,
   IconFolder,
   IconInnerShadowTop,
   IconReport,
   IconSearch,
   IconSettings,
-  IconUsers,
   IconBrandGithubFilled,
-  IconMessageChatbot
+  IconMessageChatbot,
+  IconLayoutKanban,
+  IconUser,
+  IconBasket
 } from "@tabler/icons-react";
 
 import { NavDocuments } from "@/components/nav-documents";
@@ -42,76 +40,33 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/ecommerce",
       icon: IconDashboard
     },
     {
       title: "Chats",
-      url: "#",
+      url: "/chats",
       icon: IconMessageChatbot
     },
     {
-      title: "Inbox",
-      url: "#",
-      icon: IconChartBar
+      title: "Kanban Board",
+      url: "/kanban-board",
+      icon: IconLayoutKanban
     },
     {
       title: "Projects",
-      url: "#",
+      url: "/projects-list",
       icon: IconFolder
     },
     {
-      title: "Team",
-      url: "#",
-      icon: IconUsers
-    }
-  ],
-  navClouds: [
-    {
-      title: "Capture",
-      icon: IconCamera,
-      isActive: true,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#"
-        },
-        {
-          title: "Archived",
-          url: "#"
-        }
-      ]
+      title: "User Profile",
+      url: "/user-profile-page",
+      icon: IconUser
     },
     {
-      title: "Proposal",
-      icon: IconFileDescription,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#"
-        },
-        {
-          title: "Archived",
-          url: "#"
-        }
-      ]
-    },
-    {
-      title: "Prompts",
-      icon: IconFileAi,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#"
-        },
-        {
-          title: "Archived",
-          url: "#"
-        }
-      ]
+      title: "Orders",
+      url: "/orders",
+      icon: IconBasket
     }
   ],
   navSecondary: [

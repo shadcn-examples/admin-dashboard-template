@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { SidebarMenuButton, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 import ModeToggle from "@/components/mode-toggle";
 import Link from "next/link";
 import {
@@ -13,13 +13,7 @@ import {
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  IconCreditCard,
-  IconDotsVertical,
-  IconLogout,
-  IconNotification,
-  IconUserCircle
-} from "@tabler/icons-react";
+import { IconCreditCard, IconLogout, IconNotification, IconUserCircle } from "@tabler/icons-react";
 
 const user = {
   name: "Jack",
