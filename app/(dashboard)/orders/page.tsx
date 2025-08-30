@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Orders Page - Admin Dashboard Template",
   description:
-    "A list of orders generated using the Tanstack Table. Built with Tailwind CSS, Shadcn UI and Next.js."
+    "A list of orders generated using the Tanstack Table. Built with React, Next.js and Tailwind CSS."
 };
 
 async function getOrders() {

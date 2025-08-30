@@ -51,7 +51,7 @@ interface Order {
 export const metadata: Metadata = {
   title: "Order Detail Page - Admin Dashboard Template",
   description:
-    "View and track your order details quickly on this page built with Shadcn UI, Tailwind CSS, and Next.js. Access comprehensive order information at a glance."
+    "Orders are customer purchase records that track products, quantities, and payment details. Built with React, Next.js and Tailwind CSS."
 };
 
 export default function Page() {

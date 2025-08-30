@@ -11,7 +11,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Ecommerce Admin Dashboard Template",
   description:
-    "Ecommerce admin dashboard template built with React and Next.js. shadcn/ui compatible and Typescript files included. Open source."
+    "Ecommerce admin dashboard template built with React and Next.js. shadcn/ui compatible and Typescript files included."
 };
 
 export default function Page() {

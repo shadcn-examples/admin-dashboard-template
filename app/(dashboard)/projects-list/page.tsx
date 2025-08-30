@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Projects List - Admin Dashboard Template",
   description:
-    "Ecommerce admin dashboard template built with React and Next.js. shadcn/ui compatible and Typescript files included. Open source."
+    "A project list is a structured overview of projects with their key details and statuses. Built with React, Next.js and Tailwind CSS. shadcn/ui compatible and Typescript files included."
 };
 
 const projects = [
