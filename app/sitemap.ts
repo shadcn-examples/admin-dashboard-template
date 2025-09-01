@@ -1,32 +1,23 @@
 import { MetadataRoute } from "next";
 
 const menu = [
-  {
-    url: "/ecommerce"
-  },
-  {
-    url: "/chats"
-  },
-  {
-    url: "/kanban-board"
-  },
-  {
-    url: "/projects-list"
-  },
-  {
-    url: "/user-profile-page"
-  },
-  {
-    url: "/orders"
-  }
+  "/ecommerce",
+  "/chats",
+  "/ai-chats",
+  "/kanban-board",
+  "/projects-list",
+  "/user-profile-page",
+  "/orders",
+  "/products",
+  "/empty-states"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pageRoutesLinks: MetadataRoute.Sitemap = [];
 
-  menu.map((item) => {
+  menu.map((url) => {
     pageRoutesLinks.push({
-      url: `${process.env.BASE_URL}${item.url}`,
+      url: `${process.env.BASE_URL}${url}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1
