@@ -8,7 +8,7 @@ import OrdersDataTable from "./data-table";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Orders Page - Admin Dashboard Template",
+  title: "Orders - Admin Dashboard Template",
   description:
     "A list of orders generated using the Tanstack Table. Built with React, Next.js and Tailwind CSS."
 };

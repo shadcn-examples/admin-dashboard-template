@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const stats = [
   { value: "50+", label: "Components" },
-  { value: "12+", label: "Page Templates" },
+  { value: "12+", label: "EmptyState Templates" },
   { value: "5k+", label: "Happy Customers" },
   { value: "99%", label: "Satisfaction Rate" }
 ];
@@ -38,7 +38,11 @@ export const HeroSection = () => {
               </Link>
             </Button>
             <Button size="lg" asChild variant="secondary">
-              <Link href="/pricing">See Pricing</Link>
+              <Link
+                href="https://github.com/shadcn-examples/admin-dashboard-template"
+                target="_blank">
+                View Github
+              </Link>
             </Button>
           </div>
 

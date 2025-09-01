@@ -32,6 +32,14 @@ export const FooterSection = () => {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="https://github.com/shadcn-examples/admin-dashboard-template"
+                  target="_blank"
+                  className="transition-colors hover:text-white">
+                  Github
+                </Link>
+              </li>
+              <li>
                 <Link href="/roadmap" className="transition-colors hover:text-white">
                   Roadmap
                 </Link>
@@ -66,7 +74,7 @@ export const FooterSection = () => {
         </div>
 
         <div className="mt-12 border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 AdminPro. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Admin Dashboard Template. All rights reserved.</p>
         </div>
       </div>
     </footer>

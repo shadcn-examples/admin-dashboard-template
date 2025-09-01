@@ -121,7 +121,7 @@ const Updates = () => {
           <h1 className="mb-4 text-3xl font-bold lg:text-4xl">Project Updates</h1>
           <p className="mx-auto max-w-3xl text-lg text-gray-600">
             Stay up to date with the latest features, improvements, and bug fixes we&#39;ve made to
-            Shadcn Dashboard.
+            Admin Dashboard Template.
           </p>
           <div className="mt-6 flex items-center justify-center gap-2">
             <CalendarDays className="h-5 w-5 text-blue-600" />

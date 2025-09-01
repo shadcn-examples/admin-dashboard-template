@@ -56,16 +56,8 @@ export const routeList: RouteProps[] = [
     ]
   },
   {
-    href: "/pricing",
-    label: "Pricing & FAQ"
-  },
-  {
     href: "/roadmap",
     label: "Roadmap"
-  },
-  {
-    href: "/contact",
-    label: "Contact"
   }
 ];
 
@@ -94,9 +86,9 @@ export const Navbar = () => {
                   </SheetHeader>
 
                   <div className="flex flex-col gap-2">
-                    {routeList.map((route) => (
+                    {routeList.map((route, i) => (
                       <Button
-                        key={route.href}
+                        key={i}
                         onClick={() => setIsOpen(false)}
                         asChild
                         variant="ghost"
@@ -104,8 +96,13 @@ export const Navbar = () => {
                         <Link href={route.href}>{route.label}</Link>
                       </Button>
                     ))}
+
                     <Button aria-label="Get Template" asChild>
-                      <Link href="/pricing">Get Dashboard</Link>
+                      <Link
+                        href="https://github.com/shadcn-examples/admin-dashboard-template"
+                        target="_blank">
+                        Get Dashboard
+                      </Link>
                     </Button>
                   </div>
                 </div>
@@ -123,9 +120,9 @@ export const Navbar = () => {
                       <NavigationMenuTrigger>{route.label}</NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <ul className="grid w-[240px] gap-2 md:grid-cols-1">
-                          {route.items.map((subRoute) => (
+                          {route.items.map((subRoute, i) => (
                             <ListItem
-                              key={subRoute.label}
+                              key={i}
                               title={subRoute.label}
                               href={subRoute.href}
                               isComing={subRoute.isComing}>
@@ -146,12 +143,27 @@ export const Navbar = () => {
                   )}
                 </>
               ))}
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent!")}>
+                  <Link
+                    href="https://github.com/shadcn-examples/admin-dashboard-template"
+                    target="_blank">
+                    Github
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
           <div className="hidden lg:flex">
             <Button aria-label="Get Template" asChild>
-              <Link href="/pricing">Get Dashboard</Link>
+              <Link
+                href="https://github.com/shadcn-examples/admin-dashboard-template"
+                target="_blank">
+                Get Dashboard
+              </Link>
             </Button>
           </div>
         </div>

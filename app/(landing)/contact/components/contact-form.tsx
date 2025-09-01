@@ -55,8 +55,8 @@ export default function ContactForm() {
           </Badge>
           <h1 className="mb-4 text-3xl font-bold lg:text-4xl">Contact Us</h1>
           <p className="text-muted-foreground text-lg text-balance">
-            Have questions about Shadcn Dashboard? Need support or want to discuss custom solutions?
-            We&#39;d love to hear from you.
+            Have questions about Admin Dashboard Template? Need support or want to discuss custom
+            solutions? We&#39;d love to hear from you.
           </p>
         </div>
 

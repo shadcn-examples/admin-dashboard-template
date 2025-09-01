@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Clock, Lightbulb, Rocket } from "lucide-react";
 
 export const metadata = {
-  title: `Shadcn Admin Dashboard - Roadmap`,
+  title: `Admin Dashboard Template - Roadmap`,
   description:
     "Multipurpose and powerful admin dashboard template. Compatible with shadcn/ui. Developed with Next.js, React and Tailwind CSS. Typescript supported.",
   openGraph: {
@@ -19,8 +19,8 @@ const Roadmap = () => {
   const roadmapItems = [
     {
       status: "completed",
-      quarter: "Q4 2023",
-      title: "AdminPro v2.0 Launch",
+      quarter: "Q4 2024",
+      title: "First Launch",
       items: [
         "Complete UI redesign with Shadcn/UI",
         "TypeScript migration",
@@ -143,13 +143,13 @@ const Roadmap = () => {
           </Badge>
           <h1 className="mb-4 text-3xl font-bold lg:text-4xl">
             <span className="block bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Shadcn Dashboard
+              Admin Dashboard Template
             </span>{" "}
             Roadmap
           </h1>
           <p className="text-muted-foreground text-lg text-balance">
-            We&#39;re constantly improving Shadcn Dashboard based on user feedback and industry
-            trends. Here&#39;s what we&#39;ve accomplished and what&#39;s coming next.
+            We&#39;re constantly improving Admin Dashboard Template based on user feedback and
+            industry trends. Here&#39;s what we&#39;ve accomplished and what&#39;s coming next.
           </p>
         </div>
 

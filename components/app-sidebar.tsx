@@ -14,7 +14,12 @@ import {
   IconMessageChatbot,
   IconLayoutKanban,
   IconUser,
-  IconBasket
+  IconBasket,
+  IconPercentage,
+  IconPercentage0,
+  IconCircle,
+  IconShoppingCart,
+  IconReceipt
 } from "@tabler/icons-react";
 
 import { NavDocuments } from "@/components/nav-documents";
@@ -49,6 +54,11 @@ const data = {
       icon: IconMessageChatbot
     },
     {
+      title: "AI Chat",
+      url: "/ai-chat",
+      icon: IconMessageChatbot
+    },
+    {
       title: "Kanban Board",
       url: "/kanban-board",
       icon: IconLayoutKanban
@@ -66,7 +76,17 @@ const data = {
     {
       title: "Orders",
       url: "/orders",
-      icon: IconBasket
+      icon: IconReceipt
+    },
+    {
+      title: "Products",
+      url: "/products",
+      icon: IconShoppingCart
+    },
+    {
+      title: "Empty State",
+      url: "/empty-states",
+      icon: IconCircle
     }
   ],
   navSecondary: [

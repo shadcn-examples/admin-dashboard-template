@@ -49,7 +49,7 @@ interface Order {
 }
 
 export const metadata: Metadata = {
-  title: "Order Detail Page - Admin Dashboard Template",
+  title: "Order Detail EmptyState - Admin Dashboard Template",
   description:
     "Orders are customer purchase records that track products, quantities, and payment details. Built with React, Next.js and Tailwind CSS."
 };
